@@ -1,0 +1,21 @@
+{
+  "name": "magnolia-theme",
+  "displayName": "Magnolia Theme",
+  "description": "A dark theme with gentle colors focused on contrast with primary focus on C++",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.97.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "contributes": {
+    "themes": [
+      {
+        "label": "Magnolia Theme",
+        "uiTheme": "hc-black",
+        "path": "./themes/Magnolia Theme-color-theme.json"
+      }
+    ]
+  }
+}
