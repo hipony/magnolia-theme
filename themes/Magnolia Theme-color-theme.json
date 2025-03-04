@@ -18,6 +18,7 @@
 		"textCodeBlock.background": "#1A0F17",
 		"textLink.activeForeground": "#89dceb",
 		"textLink.foreground": "#D0B3B5",
+		"textPreformat.background": "#4E2D44",
 		"textPreformat.foreground": "#FFD1DA",
 		"textSeparator.foreground": "#FFD1DA",
 		"activityBar.background": "#261722",
@@ -176,6 +177,8 @@
 		"problemsErrorIcon.foreground": "#f38ba8",
 		"problemsInfoIcon.foreground": "#D0B3B5",
 		"problemsWarningIcon.foreground": "#E8EEEA",
+		"extensionButton.foreground": "#1A0F17",
+		"extensionButton.hoverBackground": "#FFEBEF",
 		"extensionButton.background": "#FFD1DA",
 		"extensionButton.prominentForeground": "#261722",
 		"extensionButton.prominentBackground": "#FFD1DA",
@@ -734,7 +737,7 @@
 		  "entity.name.function.preprocessor.cpp",
 		],
 		"settings": {
-		  "foreground": "#B98D90",
+		  "foreground": "#AA7477",
 		  "fontStyle": "bold"
 		}
 	  },
