@@ -759,7 +759,7 @@
 		  "entity.name.struct"
 		],
 		"settings": {
-		  "foreground": "#FAF6F0"
+		  "foreground": "#FFD1DA"
 		}
 	  },
 	  {
@@ -797,7 +797,7 @@
 		  "entity.name.type"
 		],
 		"settings": {
-		  "foreground": "#FFFCF8"
+		  "foreground": "#FFD1DA"
 		}
 	  },
 	  {
@@ -806,8 +806,8 @@
 		  "storage.type.built-in",
 		],
 		"settings": {
-		  "foreground": "#FFFCF8",
-		  "fontStyle": "bold"
+		  "foreground": "#FFD1DA",
+		  "fontStyle": "italic"
 		}
 	  },
 	  {
@@ -2028,7 +2028,7 @@
 		  "storage.type.type.rust"
 		],
 		"settings": {
-		  "foreground": "#FF84B5",
+		  "foreground": "#FFD1DA",
 		  "fontStyle": ""
 		}
 	  },
