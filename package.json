@@ -2,6 +2,9 @@
   "name": "magnolia-theme",
   "displayName": "Magnolia Theme",
   "description": "A dark theme with gentle colors focused on contrast with primary focus on C++",
+  "repository": {
+    "url": "https://github.com/hipony/magnolia-theme"
+  },
   "version": "0.0.1",
   "engines": {
     "vscode": "^1.97.0"
