@@ -176,6 +176,7 @@
 		"problemsErrorIcon.foreground": "#f38ba8",
 		"problemsInfoIcon.foreground": "#D0B3B5",
 		"problemsWarningIcon.foreground": "#E8EEEA",
+		"extensionButton.background": "#FFD1DA",
 		"extensionButton.prominentForeground": "#261722",
 		"extensionButton.prominentBackground": "#FFD1DA",
 		"extensionButton.separator": "#1A0F17",
