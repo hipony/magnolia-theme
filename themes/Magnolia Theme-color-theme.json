@@ -513,7 +513,7 @@
 		"foreground": "#C0AFB2"
 	  },
 	  "variable.readonly.functionScope": {
-		"foreground": "#CCAA00"
+		"foreground": "#E6AF2E"
 	  },
 	  "selfKeyword": {
 		"foreground": "#f38ba8",
