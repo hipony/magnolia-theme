@@ -6,7 +6,7 @@
     "url": "https://github.com/hipony/magnolia-theme"
   },
   "publisher": "hipony",
-  "version": "0.0.9",
+  "version": "0.0.10",
   "engines": {
     "vscode": "^1.97.0"
   },

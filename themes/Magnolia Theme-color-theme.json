@@ -506,6 +506,15 @@
 	  "enumMember": {
 		"foreground": "#ffd600"
 	  },
+	  "concept": {
+		"foreground": "#ffd600"
+	  },
+	  "variable.functionScope": {
+		"foreground": "#C0AFB2"
+	  },
+	  "variable.readonly.functionScope": {
+		"foreground": "#CCAA00"
+	  },
 	  "selfKeyword": {
 		"foreground": "#f38ba8",
 		"fontStyle": "bold"
@@ -515,9 +524,6 @@
 	  },
 	  "number": {
 		"foreground": "#bbe5ab"
-	  },
-	  "variable.defaultLibrary": {
-		"foreground": "#eba0ac"
 	  },
 	  "class:python": {
 		"foreground": "#FFE6F2"
@@ -726,7 +732,7 @@
 		  "variable.function"
 		],
 		"settings": {
-		  "foreground": "#E3D68B"
+		  "foreground": "#BFAEED"
 		}
 	  },
 	  {
