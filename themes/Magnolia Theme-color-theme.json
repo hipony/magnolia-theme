@@ -510,10 +510,10 @@
 		"foreground": "#ffd600"
 	  },
 	  "variable.functionScope": {
-		"foreground": "#C0AFB2"
+		"foreground": "#c9bb91"
 	  },
 	  "variable.readonly.functionScope": {
-		"foreground": "#E6AF2E"
+		"foreground": "#ffe79c"
 	  },
 	  "selfKeyword": {
 		"foreground": "#f38ba8",
@@ -834,7 +834,7 @@
 		  "meta.function.parameters"
 		],
 		"settings": {
-		  "foreground": "#BEB49D",
+		  "foreground": "#ffce9c",
 		}
 	  },
 	  {
