@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/images/icon.png"  style="border-radius: 50%;" width="100"/>
+  <img src="assets/images/icon.png"  style="border-radius: 50%;" width="150"/>
 </p>
 
 # Magnolia Theme
