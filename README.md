@@ -1,8 +1,9 @@
 <p align="center">
-  <img src="assets/images/icon.png"  style="border-radius: 50%;" width="150"/>
+  <img src="assets/images/icon.png"
+  alt="Logo image"
+  style="border-radius: 50%; object-fit: cover;" width="150"/>
+  <h1 align="center">Magnolia Theme</h1>
 </p>
-
-# Magnolia Theme
 
 [![GitHub](https://img.shields.io/badge/GitHub-Repository-blue?logo=github&colorA=17183B&colorB=FFD1DA&style=for-the-badge)](https://github.com/hipony/magnolia-theme)[![License](https://img.shields.io/badge/license-BSL-blue.svg?colorA=17183B&colorB=DCE5E0&style=for-the-badge)](https://opensource.org/licenses/BSL-1.0)
 
