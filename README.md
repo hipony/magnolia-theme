@@ -10,7 +10,7 @@ A dark theme with gentle colors with focus on C++.
 
 ## Preview
 
-![Theme preview](assets/images/image0.png)
+![Theme preview](assets/images/preview.png)
 
 ## Installation
 
