@@ -1,7 +1,6 @@
 <p align="center">
-  <img src="assets/images/icon.png"
-  alt="Logo image"
-  style="border-radius: 50%; object-fit: cover;" width="150"/>
+  <img src="assets/images/icon_crop.png"
+  alt="Logo image"/>
   <h1 align="center">Magnolia Theme</h1>
 </p>
 
