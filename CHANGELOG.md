@@ -2,7 +2,7 @@
 
 All notable changes to the "magnolia-theme" extension will be documented in this file.
 
-## [0.3.0] - 2026-09-05
+## [0.3.1] - 2026-09-05
 
 ### Added
 
