@@ -2,6 +2,22 @@
 
 All notable changes to the "magnolia-theme" extension will be documented in this file.
 
+## [0.3.0] - 2026-09-05
+
+### Added
+
+- Palette source of truth (`palette/palette.json`) with a generator (`tools/generate.py`, `npm run generate`) that lints the VS Code theme against the palette and exports:
+  - Konsole color scheme (`exports/konsole/Magnolia.colorscheme`)
+  - opencode theme (`exports/opencode/magnolia.json`)
+  - Palette table in the README
+- The linter also enforces the terminal ANSI 16 mapping (`terminal.ansi*` ↔ `palette.ansi`), and the README documents the slot-to-color table
+- Palette section in the README
+
+### Changed
+
+- Terminal ANSI palette reworked to match the theme's identity: dusty sage green, champagne yellow, periwinkle blue and dusty-aqua cyan replace the generic pastels; terminal hues now have dedicated palette entries instead of sharing syntax colors
+- `charts.lines` now uses the identity pink (was an off-palette grey)
+
 ## [0.2.0] - 2026-09-05
 
 ### Added
