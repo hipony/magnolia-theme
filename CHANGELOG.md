@@ -2,6 +2,12 @@
 
 All notable changes to the "magnolia-theme" extension will be documented in this file.
 
+## [0.3.2] - 2026-09-05
+
+### Changed
+
+- Terminal ANSI green, yellow and blue retuned to grey-tinted pastels: green `#D4DED9`, yellow `#E9D190`, blue `#A9B4D6` (grey lavender instead of vivid periwinkle)
+
 ## [0.3.1] - 2026-09-05
 
 ### Added

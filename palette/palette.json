@@ -38,18 +38,19 @@
 		"ansi.black": { "hex": "#2b2c52", "role": "ANSI black (velvet surface)" },
 		"ansi.black.bright": { "hex": "#454770", "role": "ANSI bright black" },
 		"ansi.red.bright": { "hex": "#f7a3ba", "role": "ANSI bright red" },
-		"ansi.green": { "hex": "#aac6a4", "role": "ANSI green (dusty sage)" },
-		"ansi.green.bright": { "hex": "#c6debc", "role": "ANSI bright green" },
-		"ansi.yellow": { "hex": "#e6cfa3", "role": "ANSI yellow (champagne)" },
-		"ansi.yellow.bright": { "hex": "#f1e2bd", "role": "ANSI bright yellow" },
-		"ansi.periwinkle.bright": { "hex": "#ccd6ff", "role": "ANSI bright blue" },
+		"ansi.green": { "hex": "#D4DED9", "role": "ANSI green (grey-tinted mint)" },
+		"ansi.green.bright": { "hex": "#E2EAE6", "role": "ANSI bright green" },
+		"ansi.yellow": { "hex": "#E9D190", "role": "ANSI yellow (soft gold)" },
+		"ansi.yellow.bright": { "hex": "#F1E0A8", "role": "ANSI bright yellow" },
+		"ansi.blue": { "hex": "#A9B4D6", "role": "ANSI blue (grey lavender)" },
+		"ansi.blue.bright": { "hex": "#C0C9E6", "role": "ANSI bright blue" },
 		"ansi.petal.bright": { "hex": "#f9d8ef", "role": "ANSI bright magenta" },
 		"ansi.cyan": { "hex": "#9fd8cd", "role": "ANSI cyan (dusty aqua)" },
 		"ansi.cyan.bright": { "hex": "#bfe9e0", "role": "ANSI bright cyan" }
 	},
 	"ansi": {
-		"normal": ["ansi.black", "red", "ansi.green", "ansi.yellow", "periwinkle", "petal", "ansi.cyan", "fg.muted"],
-		"bright": ["ansi.black.bright", "ansi.red.bright", "ansi.green.bright", "ansi.yellow.bright", "ansi.periwinkle.bright", "ansi.petal.bright", "ansi.cyan.bright", "fg.bright"]
+		"normal": ["ansi.black", "red", "ansi.green", "ansi.yellow", "ansi.blue", "petal", "ansi.cyan", "fg.muted"],
+		"bright": ["ansi.black.bright", "ansi.red.bright", "ansi.green.bright", "ansi.yellow.bright", "ansi.blue.bright", "ansi.petal.bright", "ansi.cyan.bright", "fg.bright"]
 	},
 	"konsole": {
 		"background": "bg.base",

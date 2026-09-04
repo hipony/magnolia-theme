@@ -60,14 +60,15 @@ The palette in [`palette/palette.json`](palette/palette.json) is the source of t
 | `rust` | `#AA7477` | C++ preprocessor function names |
 | **Terminal (ANSI only)** | | |
 | `ansi.black` | `#2b2c52` | ANSI black (velvet surface) |
-| `ansi.green` | `#aac6a4` | ANSI green (dusty sage) |
-| `ansi.yellow` | `#e6cfa3` | ANSI yellow (champagne) |
+| `ansi.green` | `#D4DED9` | ANSI green (grey-tinted mint) |
+| `ansi.yellow` | `#E9D190` | ANSI yellow (soft gold) |
+| `ansi.blue` | `#A9B4D6` | ANSI blue (grey lavender) |
 | `ansi.cyan` | `#9fd8cd` | ANSI cyan (dusty aqua) |
 | `ansi.black.bright` | `#454770` | ANSI bright black |
 | `ansi.red.bright` | `#f7a3ba` | ANSI bright red |
-| `ansi.green.bright` | `#c6debc` | ANSI bright green |
-| `ansi.yellow.bright` | `#f1e2bd` | ANSI bright yellow |
-| `ansi.periwinkle.bright` | `#ccd6ff` | ANSI bright blue |
+| `ansi.green.bright` | `#E2EAE6` | ANSI bright green |
+| `ansi.yellow.bright` | `#F1E0A8` | ANSI bright yellow |
+| `ansi.blue.bright` | `#C0C9E6` | ANSI bright blue |
 | `ansi.petal.bright` | `#f9d8ef` | ANSI bright magenta |
 | `ansi.cyan.bright` | `#bfe9e0` | ANSI bright cyan |
 
@@ -79,12 +80,12 @@ Terminal mapping (ANSI 16, shared by the VS Code terminal, Konsole export):
 | 8 (bright black) | `ansi.black.bright` | `#454770` |
 | 1 | `red` | `#f38ba8` |
 | 9 (bright red) | `ansi.red.bright` | `#f7a3ba` |
-| 2 | `ansi.green` | `#aac6a4` |
-| 10 (bright green) | `ansi.green.bright` | `#c6debc` |
-| 3 | `ansi.yellow` | `#e6cfa3` |
-| 11 (bright yellow) | `ansi.yellow.bright` | `#f1e2bd` |
-| 4 | `periwinkle` | `#b4befe` |
-| 12 (bright blue) | `ansi.periwinkle.bright` | `#ccd6ff` |
+| 2 | `ansi.green` | `#D4DED9` |
+| 10 (bright green) | `ansi.green.bright` | `#E2EAE6` |
+| 3 | `ansi.yellow` | `#E9D190` |
+| 11 (bright yellow) | `ansi.yellow.bright` | `#F1E0A8` |
+| 4 | `ansi.blue` | `#A9B4D6` |
+| 12 (bright blue) | `ansi.blue.bright` | `#C0C9E6` |
 | 5 | `petal` | `#f5c2e7` |
 | 13 (bright magenta) | `ansi.petal.bright` | `#f9d8ef` |
 | 6 | `ansi.cyan` | `#9fd8cd` |
