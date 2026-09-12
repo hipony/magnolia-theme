@@ -97,6 +97,7 @@ Terminal mapping (ANSI 16, shared by the VS Code terminal, Konsole export):
 
 ## Other apps
 
+- **KDE Plasma**: copy [`exports/kde/Magnolia.colors`](exports/kde/Magnolia.colors) to `~/.local/share/color-schemes/`, then select "Magnolia" in *System Settings → Colors & Themes → Colors*
 - **Konsole**: copy [`exports/konsole/Magnolia.colorscheme`](exports/konsole/Magnolia.colorscheme) to `~/.local/share/konsole/`
 - **opencode**: copy [`exports/opencode/magnolia.json`](exports/opencode/magnolia.json) to `~/.config/opencode/themes/`, restart opencode, then select via `/theme`
 

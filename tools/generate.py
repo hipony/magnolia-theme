@@ -2,7 +2,7 @@
 """Magnolia theme generator.
 
 - Lints the VS Code theme against palette/palette.json (no stray colors)
-- Emits Konsole .colorscheme and opencode theme into exports/
+- Emits Konsole .colorscheme, KDE .colors, and opencode theme into exports/
 - Regenerates the palette table in README.md
 
 Zero dependencies, Python 3.8+. Run: python3 tools/generate.py
@@ -143,6 +143,100 @@ def emit_konsole(palette):
     return out
 
 
+# ---------- KDE ----------
+
+COLOR_EFFECT_DISABLED = """\
+[ColorEffects:Disabled]
+ChangeSelectionColor=
+ColorAmount=0
+ColorEffect=0
+ContrastAmount=0.65
+ContrastEffect=1
+Enabled=
+IntensityAmount=0.35
+IntensityEffect=2
+"""
+
+COLOR_EFFECT_INACTIVE = """\
+[ColorEffects:Inactive]
+ChangeSelectionColor=
+ColorAmount=0.025
+ColorEffect=0
+ContrastAmount=0.1
+ContrastEffect=0
+Enabled=
+IntensityAmount=0
+IntensityEffect=0
+"""
+
+
+def emit_kde(palette):
+    p = palette
+    ref = p["_by_name"]
+    k = p["kde"]
+
+    def dec(name):
+        return to_rgb_dec(ref[name])
+
+    accent = k["accent"]
+    hover = k["accentHover"]
+    selection = k["selectionBackground"]
+    selection_alt = k["selectionAlternateBackground"]
+    selection_text = k["selectionText"]
+
+    def group(background, alternate):
+        return "\n".join([
+            f"BackgroundAlternate={dec(alternate)}",
+            f"BackgroundNormal={dec(background)}",
+            f"DecorationFocus={dec(accent)}",
+            f"DecorationHover={dec(hover)}",
+            f"ForegroundActive={dec(accent)}",
+            f"ForegroundInactive={dec(k['textInactive'])}",
+            f"ForegroundLink={dec(k['link'])}",
+            f"ForegroundNegative={dec(k['negative'])}",
+            f"ForegroundNeutral={dec(k['neutral'])}",
+            f"ForegroundNormal={dec(k['text'])}",
+            f"ForegroundPositive={dec(k['positive'])}",
+            f"ForegroundVisited={dec(k['visited'])}",
+        ])
+
+    def selection_group():
+        return "\n".join([
+            f"BackgroundAlternate={dec(selection_alt)}",
+            f"BackgroundNormal={dec(selection)}",
+            f"DecorationFocus={dec(accent)}",
+            f"DecorationHover={dec(hover)}",
+            f"ForegroundActive={dec(selection_text)}",
+            f"ForegroundInactive={dec(k['border'])}",
+            f"ForegroundLink={dec(selection_text)}",
+            f"ForegroundNegative={dec(k['negative'])}",
+            f"ForegroundNeutral={dec(k['neutral'])}",
+            f"ForegroundNormal={dec(selection_text)}",
+            f"ForegroundPositive={dec(k['positive'])}",
+            f"ForegroundVisited={dec(k['visited'])}",
+        ])
+
+    groups = [
+        ("[Colors:Button]", group(k["chrome"], k["window"])),
+        ("[Colors:Complementary]", group(k["chrome"], k["deep"])),
+        ("[Colors:Header]", group(k["chrome"], k["window"])),
+        ("[Colors:Selection]", selection_group()),
+        ("[Colors:Tooltip]", group(k["deep"], k["chrome"])),
+        ("[Colors:View]", group(k["window"], k["chrome"])),
+        ("[Colors:Window]", group(k["window"], k["chrome"])),
+    ]
+
+    lines = [f"[General]\nName={p['name']}\nColorScheme={p['name']}", ""]
+    for title, body in groups:
+        lines += [title, body, ""]
+    text = "\n".join(lines) + "\n" + COLOR_EFFECT_DISABLED + "\n" + COLOR_EFFECT_INACTIVE
+
+    out = EXPORTS / "kde" / f"{p['name']}.colors"
+    out.parent.mkdir(parents=True, exist_ok=True)
+    out.write_text(text)
+    return out
+
+
 # ---------- opencode ----------
 
 def emit_opencode(palette):
@@ -224,9 +318,10 @@ def main():
     palette = load_palette()
     ok = lint(palette)
     konsole = emit_konsole(palette)
+    kde = emit_kde(palette)
     oc = emit_opencode(palette)
     readme = emit_readme(palette)
-    print(f"WROTE: {konsole.relative_to(ROOT)}, {oc.relative_to(ROOT)}")
+    print(f"WROTE: {konsole.relative_to(ROOT)}, {kde.relative_to(ROOT)}, {oc.relative_to(ROOT)}")
     if readme:
         print(f"WROTE: {readme.relative_to(ROOT)}")
     return 0 if ok else 1

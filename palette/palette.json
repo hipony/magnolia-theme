@@ -60,6 +60,24 @@
 		"foregroundIntense": "fg.bright",
 		"foregroundFaint": "fg.muted"
 	},
+	"kde": {
+		"window": "bg.base",
+		"chrome": "bg.chrome",
+		"deep": "bg.deep",
+		"text": "fg.bright",
+		"textInactive": "fg.muted",
+		"accent": "fg",
+		"accentHover": "punch",
+		"selectionBackground": "fg",
+		"selectionAlternateBackground": "punch",
+		"selectionText": "bg.base",
+		"link": "taupe",
+		"visited": "comment",
+		"negative": "red",
+		"positive": "green",
+		"neutral": "sand",
+		"border": "border"
+	},
 	"opencode": {
 		"defs": {
 			"magnolia": "fg",
