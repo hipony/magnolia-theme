@@ -2,55 +2,200 @@
 	"name": "Magnolia",
 	"description": "Dark theme with gentle colors with focus on C++",
 	"colors": {
-		"bg.base": { "hex": "#11122C", "role": "Editor, panels, widgets, menus" },
-		"bg.chrome": { "hex": "#17183B", "role": "Activity bar, side bar, status bar, title bar, tab strip" },
-		"bg.deep": { "hex": "#0D0E22", "role": "Darker than base: unfocused inactive tabs" },
-
-		"fg": { "hex": "#FFD1DA", "role": "Magnolia pink: default foreground and UI accent; control keywords, types" },
-		"fg.bright": { "hex": "#FFEBEF", "role": "Near-white pink: base text, variables" },
-		"fg.bone": { "hex": "#E8EEEA", "role": "Off-white: decorators, language constants, heading 2" },
-		"fg.muted": { "hex": "#9D8EA4", "role": "Muted mauve: disabled text, secondary labels" },
-		"fg.faint": { "hex": "#6c5c73", "role": "Faint: inactive items, ignored files, resolved markers" },
-		"fg.rose": { "hex": "#9F868A", "role": "Rose grey: punctuation, brackets, selections, line numbers" },
-		"border": { "hex": "#5B4D61", "role": "Contrast borders, table borders" },
-
-		"red": { "hex": "#f38ba8", "role": "Errors, deleted, breakpoints, self/this, emphasis" },
-		"mint": { "hex": "#DCE5E0", "role": "Added/inserted, raw code, pale accents" },
-		"green": { "hex": "#bbe5ab", "role": "Strings, numbers, success, ANSI green" },
-		"blush": { "hex": "#FFE6F2", "role": "Modified files, enums, preprocessor directives" },
-		"gold": { "hex": "#ffd600", "role": "Constants, enum members, concepts" },
-		"sand": { "hex": "#ebd391", "role": "Warnings, ANSI yellow" },
-		"peach": { "hex": "#ffce9c", "role": "Parameters, git conflicts, charts orange" },
-		"punch": { "hex": "#FF90BC", "role": "Keywords, object properties" },
-		"lilac": { "hex": "#BFAEED", "role": "Function declarations" },
-		"taupe": { "hex": "#D0B3B5", "role": "Info, links, function calls, property names" },
-		"cream": { "hex": "#F5EEE0", "role": "Enum members, operators, list bullets" },
-		"petal": { "hex": "#f5c2e7", "role": "Escapes, format placeholders, quotes, ANSI magenta" },
-		"maroon": { "hex": "#eba0ac", "role": "Metavariables, JSDoc params, secondary deletions" },
-		"sky": { "hex": "#89dceb", "role": "Type parameters, renamed files, info markers, ANSI cyan" },
-		"azure": { "hex": "#74c7ec", "role": "Heading 5, brackets 5, ANSI blue" },
-		"periwinkle": { "hex": "#b4befe", "role": "Heading 6, markdown link titles" },
-		"rosewater": { "hex": "#f5e0dc", "role": "Cursors, regex ranges" },
-		"flamingo": { "hex": "#f2cdcd", "role": "Packages, snippets, GraphQL aliases, math" },
-		"comment": { "hex": "#A17D9B", "role": "Comments" },
-		"rust": { "hex": "#AA7477", "role": "C++ preprocessor function names" },
-
-		"ansi.black": { "hex": "#2b2c52", "role": "ANSI black (velvet surface)" },
-		"ansi.black.bright": { "hex": "#454770", "role": "ANSI bright black" },
-		"ansi.red.bright": { "hex": "#f7a3ba", "role": "ANSI bright red" },
-		"ansi.green": { "hex": "#D4DED9", "role": "ANSI green (grey-tinted mint)" },
-		"ansi.green.bright": { "hex": "#E2EAE6", "role": "ANSI bright green" },
-		"ansi.yellow": { "hex": "#E9D190", "role": "ANSI yellow (soft gold)" },
-		"ansi.yellow.bright": { "hex": "#F1E0A8", "role": "ANSI bright yellow" },
-		"ansi.blue": { "hex": "#A9B4D6", "role": "ANSI blue (grey lavender)" },
-		"ansi.blue.bright": { "hex": "#C0C9E6", "role": "ANSI bright blue" },
-		"ansi.petal.bright": { "hex": "#f9d8ef", "role": "ANSI bright magenta" },
-		"ansi.cyan": { "hex": "#9fd8cd", "role": "ANSI cyan (dusty aqua)" },
-		"ansi.cyan.bright": { "hex": "#bfe9e0", "role": "ANSI bright cyan" }
+		"bg.base": {
+			"hex": "#11122C",
+			"role": "Editor, panels, widgets, menus"
+		},
+		"bg.chrome": {
+			"hex": "#17183B",
+			"role": "Activity bar, side bar, status bar, title bar, tab strip"
+		},
+		"bg.deep": {
+			"hex": "#0D0E22",
+			"role": "Darker than base: unfocused inactive tabs"
+		},
+		"fg": {
+			"hex": "#FFD1DA",
+			"role": "Magnolia pink: default foreground and UI accent; control keywords, types"
+		},
+		"fg.bright": {
+			"hex": "#FFEBEF",
+			"role": "Near-white pink: base text, variables"
+		},
+		"fg.bone": {
+			"hex": "#E8EEEA",
+			"role": "Off-white: decorators, language constants, heading 2"
+		},
+		"fg.muted": {
+			"hex": "#9D8EA4",
+			"role": "Muted mauve: disabled text, secondary labels"
+		},
+		"fg.faint": {
+			"hex": "#75647C",
+			"role": "Faint: inactive items, ignored files, resolved markers"
+		},
+		"fg.rose": {
+			"hex": "#9F868A",
+			"role": "Rose grey: punctuation, brackets, selections, line numbers"
+		},
+		"border": {
+			"hex": "#6E5D75",
+			"role": "Contrast borders, table borders"
+		},
+		"red": {
+			"hex": "#f38ba8",
+			"role": "Errors, deleted, breakpoints, self/this, emphasis"
+		},
+		"mint": {
+			"hex": "#DCE5E0",
+			"role": "Added/inserted, raw code, pale accents"
+		},
+		"green": {
+			"hex": "#bbe5ab",
+			"role": "Strings, numbers, success, ANSI green"
+		},
+		"blush": {
+			"hex": "#FFE6F2",
+			"role": "Modified files, enums, preprocessor directives"
+		},
+		"gold": {
+			"hex": "#ffd600",
+			"role": "Constants, enum members, concepts"
+		},
+		"sand": {
+			"hex": "#ebd391",
+			"role": "Warnings, ANSI yellow"
+		},
+		"peach": {
+			"hex": "#ffce9c",
+			"role": "Parameters, git conflicts, charts orange"
+		},
+		"punch": {
+			"hex": "#FF90BC",
+			"role": "Keywords, object properties"
+		},
+		"dusk": {
+			"hex": "#7A6570",
+			"role": "Greyed dark magnolia: highlight and selection backgrounds"
+		},
+		"lilac": {
+			"hex": "#BFAEED",
+			"role": "Function declarations"
+		},
+		"taupe": {
+			"hex": "#D0B3B5",
+			"role": "Info, links, function calls, property names"
+		},
+		"cream": {
+			"hex": "#F5EEE0",
+			"role": "Enum members, operators, list bullets"
+		},
+		"petal": {
+			"hex": "#f5c2e7",
+			"role": "Escapes, format placeholders, quotes, ANSI magenta"
+		},
+		"maroon": {
+			"hex": "#eba0ac",
+			"role": "Metavariables, JSDoc params, secondary deletions"
+		},
+		"sky": {
+			"hex": "#89dceb",
+			"role": "Type parameters, renamed files, info markers, ANSI cyan"
+		},
+		"azure": {
+			"hex": "#74c7ec",
+			"role": "Heading 5, brackets 5, ANSI blue"
+		},
+		"periwinkle": {
+			"hex": "#b4befe",
+			"role": "Heading 6, markdown link titles"
+		},
+		"rosewater": {
+			"hex": "#f5e0dc",
+			"role": "Cursors, regex ranges"
+		},
+		"flamingo": {
+			"hex": "#f2cdcd",
+			"role": "Packages, snippets, GraphQL aliases, math"
+		},
+		"comment": {
+			"hex": "#A17D9B",
+			"role": "Comments"
+		},
+		"rust": {
+			"hex": "#AA7477",
+			"role": "C++ preprocessor function names"
+		},
+		"ansi.black": {
+			"hex": "#2b2c52",
+			"role": "ANSI black (velvet surface)"
+		},
+		"ansi.black.bright": {
+			"hex": "#454770",
+			"role": "ANSI bright black"
+		},
+		"ansi.red.bright": {
+			"hex": "#f7a3ba",
+			"role": "ANSI bright red"
+		},
+		"ansi.green": {
+			"hex": "#D4DED9",
+			"role": "ANSI green (grey-tinted mint)"
+		},
+		"ansi.green.bright": {
+			"hex": "#E2EAE6",
+			"role": "ANSI bright green"
+		},
+		"ansi.yellow": {
+			"hex": "#E9D190",
+			"role": "ANSI yellow (soft gold)"
+		},
+		"ansi.yellow.bright": {
+			"hex": "#F1E0A8",
+			"role": "ANSI bright yellow"
+		},
+		"ansi.blue": {
+			"hex": "#A9B4D6",
+			"role": "ANSI blue (grey lavender)"
+		},
+		"ansi.blue.bright": {
+			"hex": "#C0C9E6",
+			"role": "ANSI bright blue"
+		},
+		"ansi.petal.bright": {
+			"hex": "#f9d8ef",
+			"role": "ANSI bright magenta"
+		},
+		"ansi.cyan": {
+			"hex": "#9fd8cd",
+			"role": "ANSI cyan (dusty aqua)"
+		},
+		"ansi.cyan.bright": {
+			"hex": "#bfe9e0",
+			"role": "ANSI bright cyan"
+		}
 	},
 	"ansi": {
-		"normal": ["ansi.black", "red", "ansi.green", "ansi.yellow", "ansi.blue", "petal", "ansi.cyan", "fg.muted"],
-		"bright": ["ansi.black.bright", "ansi.red.bright", "ansi.green.bright", "ansi.yellow.bright", "ansi.blue.bright", "ansi.petal.bright", "ansi.cyan.bright", "fg.bright"]
+		"normal": [
+			"ansi.black",
+			"red",
+			"ansi.green",
+			"ansi.yellow",
+			"ansi.blue",
+			"petal",
+			"ansi.cyan",
+			"fg.muted"
+		],
+		"bright": [
+			"ansi.black.bright",
+			"ansi.red.bright",
+			"ansi.green.bright",
+			"ansi.yellow.bright",
+			"ansi.blue.bright",
+			"ansi.petal.bright",
+			"ansi.cyan.bright",
+			"fg.bright"
+		]
 	},
 	"konsole": {
 		"background": "bg.base",
@@ -66,17 +211,423 @@
 		"deep": "bg.deep",
 		"text": "fg.bright",
 		"textInactive": "fg.muted",
-		"accent": "fg",
-		"accentHover": "punch",
-		"selectionBackground": "fg",
-		"selectionAlternateBackground": "punch",
-		"selectionText": "bg.base",
+		"accent": "dusk",
+		"accentText": "taupe",
+		"accentHover": "dusk",
+		"selectionBackground": "dusk",
+		"selectionAlternateBackground": "border",
+		"selectionText": "fg.bright",
 		"link": "taupe",
 		"visited": "comment",
 		"negative": "red",
 		"positive": "green",
 		"neutral": "sand",
-		"border": "border"
+		"border": "border",
+		"contrast": 4,
+		"wmActiveBackground": "bg.chrome",
+		"wmActiveForeground": "fg.bright",
+		"wmActiveBlend": "border",
+		"wmInactiveBackground": "bg.deep",
+		"wmInactiveForeground": "fg.muted",
+		"wmInactiveBlend": "fg.muted",
+		"headerInactiveBackground": "bg.deep",
+		"headerInactiveAlternate": "bg.chrome",
+		"headerInactiveText": "fg.muted",
+		"headerInactiveTextInactive": "fg.faint"
+	},
+	"plasmaTheme": {
+		"baseTheme": "/usr/share/plasma/desktoptheme/Orchis-dark",
+		"dropFiles": [
+			"colors"
+		],
+		"svgColorMap": {
+			"#1a1a1a": "bg.base",
+			"#333333": "bg.chrome",
+			"#4285f4": "dusk",
+			"#dfdfdf": "fg.bright",
+			"#3daee9": "dusk",
+			"#93cee9": "punch",
+			"#31363b": "bg.chrome",
+			"#5294e2": "dusk",
+			"#f5f5f5": "bg.deep",
+			"#fefefe": "bg.deep",
+			"#1a73e8": "dusk",
+			"#8ab4f8": "dusk",
+			"#1E92FF": "dusk",
+			"#3281ea": "dusk",
+			"#2ecc71": "green",
+			"#ececec": "fg.bone",
+			"#dedede": "fg.bone",
+			"#eff0f1": "fg.bright",
+			"#fcfcfc": "fg.bright",
+			"#ffffff": "fg.bright",
+			"#d1d1d1": "ansi.green",
+			"#212329": "bg.deep",
+			"#282828": "bg.base",
+			"#303030": "bg.chrome",
+			"#4d4d4d": "border",
+			"#545454": "border",
+			"#666666": "fg.faint",
+			"#3daee6": "dusk",
+			"#232629": "bg.chrome",
+			"#242424": "bg.chrome",
+			"#363636": "bg.chrome",
+			"#36393e": "bg.chrome",
+			"#3a3a3a": "bg.chrome",
+			"#464646": "border",
+			"#474747": "border",
+			"#484848": "border",
+			"#565656": "dusk",
+			"#7b7c7e": "dusk",
+			"#f67400": "sand",
+			"#f9f9f9": "fg.bright",
+			"#cccccc": "ansi.green",
+			"#33a0ff": "dusk",
+			"#71dbff": "dusk",
+			"#0626a8": "dusk",
+			"#81c995": "green",
+			"#4caf50": "green",
+			"#27ae60": "green",
+			"#da4453": "red",
+			"#ef5350": "red",
+			"#ff9800": "peach",
+			"#ffca28": "gold",
+			"#ec407a": "punch"
+		},
+		"svgFileRecolor": {
+			"widgets/tooltip.svgz": {
+				"currentColor": "bg.deep"
+			},
+			"solid/widgets/tooltip.svgz": {
+				"currentColor": "bg.deep"
+			},
+			"translucent/widgets/tooltip.svgz": {
+				"currentColor": "bg.deep"
+			}
+		},
+		"panelScrim": {
+			"color": "bg.base",
+			"opacity": 0.8,
+			"from": "fill:#000000;opacity:0.65",
+			"files": [
+				"widgets/panel-background.svg",
+				"translucent/widgets/panel-background.svg"
+			]
+		}
+	},
+	"kvantum": {
+		"baseTheme": "/usr/share/Kvantum/Orchis/OrchisDark.kvconfig",
+		"svgColorMap": {
+			"#3daee6": "dusk",
+			"#4285f4": "dusk",
+			"#dfdfdf": "fg.bright",
+			"#1a73e8": "dusk",
+			"#b74aff": "punch",
+			"#f04a50": "red",
+			"#81c995": "green",
+			"#ffffff": "fg.bright",
+			"#eaeaea": "fg.bone",
+			"#c1c1c1": "taupe",
+			"#b6b6b6": "taupe",
+			"#acb1bc": "ansi.blue",
+			"#989898": "fg.rose",
+			"#646464": "fg.faint",
+			"#5a616e": "fg.faint",
+			"#5a5a5a": "border",
+			"#424242": "border",
+			"#3a3a3a": "bg.chrome",
+			"#36383e": "bg.chrome",
+			"#343031": "bg.chrome",
+			"#26272a": "bg.chrome",
+			"#292929": "bg.chrome",
+			"#262626": "bg.chrome",
+			"#242424": "bg.chrome",
+			"#212121": "bg.base",
+			"#1f1f1f": "bg.base",
+			"#1e1e1e": "bg.base",
+			"#1c1c1c": "bg.base",
+			"#1a1a1a": "bg.base",
+			"#0f0f0f": "bg.deep"
+		},
+		"colorMap": {
+			"#212121": "bg.base",
+			"#282828": "bg.chrome",
+			"#2C2C2C": "bg.chrome",
+			"#2e2e2e": "bg.chrome",
+			"#323232": "bg.chrome",
+			"#4d4d4d": "border",
+			"#535353": "border",
+			"#474747": "border",
+			"#3a474e": "border",
+			"#dfdfdf": "fg.bright",
+			"#efefef": "fg.bright",
+			"#ffffff": "fg.bright",
+			"#787878": "fg.muted",
+			"#696969": "fg.muted",
+			"#4285f4": "dusk",
+			"#E040FB": "punch",
+			"#0057AE": "taupe"
+		},
+		"namedColorMap": {
+			"white": "fg.bright"
+		}
+	},
+	"gtkTheme": {
+		"baseTheme": "/usr/share/themes/Orchis-Dark",
+		"cssColorMap": {
+			"#031579": "dusk",
+			"#090909": "bg.deep",
+			"#0c0c0c": "bg.deep",
+			"#0f0f0f": "bg.deep",
+			"#0f9ac8": "sky",
+			"#121212": "bg.deep",
+			"#131313": "bg.deep",
+			"#135cbc": "dusk",
+			"#141414": "bg.deep",
+			"#1667d3": "dusk",
+			"#171717": "bg.deep",
+			"#191919": "bg.deep",
+			"#1a5fb4": "dusk",
+			"#1a73e8": "dusk",
+			"#1b73e8": "dusk",
+			"#1c6d38": "green",
+			"#1c71d8": "dusk",
+			"#1d1d1d": "bg.base",
+			"#1e1e1e": "bg.base",
+			"#1f1f1f": "bg.base",
+			"#202020": "bg.base",
+			"#212121": "bg.base",
+			"#213397": "dusk",
+			"#241f31": "ansi.black",
+			"#242424": "bg.chrome",
+			"#26a269": "green",
+			"#27a66c": "green",
+			"#2861c6": "dusk",
+			"#29ae74": "green",
+			"#2b2928": "bg.chrome",
+			"#2b9751": "green",
+			"#2c2c2c": "bg.chrome",
+			"#2d3949": "ansi.black.bright",
+			"#2ec27e": "green",
+			"#2f2f2f": "bg.chrome",
+			"#303030": "ansi.black",
+			"#3281ea": "dusk",
+			"#33302f": "ansi.black",
+			"#333333": "ansi.black",
+			"#337fdc": "dusk",
+			"#33d17a": "green",
+			"#342c27": "border",
+			"#343434": "ansi.black",
+			"#363636": "ansi.black",
+			"#38c76a": "green",
+			"#393484": "dusk",
+			"#393634": "ansi.black",
+			"#3b3b3b": "ansi.black",
+			"#3c3c3c": "ansi.black",
+			"#3c87eb": "azure",
+			"#3d3846": "ansi.black",
+			"#3e3e3e": "ansi.black",
+			"#3f51b5": "dusk",
+			"#403c3a": "ansi.black",
+			"#404040": "ansi.black",
+			"#408aeb": "azure",
+			"#414141": "ansi.black",
+			"#424242": "ansi.black",
+			"#428bec": "azure",
+			"#444444": "ansi.black",
+			"#455a64": "ansi.black.bright",
+			"#463e39": "border",
+			"#464646": "border",
+			"#474341": "border",
+			"#478eec": "azure",
+			"#479863": "green",
+			"#498fec": "azure",
+			"#4a4a4a": "border",
+			"#4c4c4c": "border",
+			"#4cb168": "green",
+			"#4d4d4d": "border",
+			"#505050": "border",
+			"#5194ed": "azure",
+			"#535353": "border",
+			"#545454": "border",
+			"#574f4a": "rust",
+			"#57e389": "green",
+			"#595959": "border",
+			"#5a5a5a": "border",
+			"#5b9aee": "azure",
+			"#5c9bee": "azure",
+			"#5e5c64": "border",
+			"#609def": "azure",
+			"#613583": "ansi.black.bright",
+			"#616161": "border",
+			"#62a0ea": "azure",
+			"#63452c": "border",
+			"#646464": "fg.faint",
+			"#65a1ef": "azure",
+			"#666666": "fg.faint",
+			"#66bb6a": "green",
+			"#6a007e": "ansi.black",
+			"#6a582c": "border",
+			"#6a7ce0": "azure",
+			"#6ab85b": "green",
+			"#6d53e0": "ansi.blue",
+			"#6e6d71": "fg.faint",
+			"#70a7f0": "azure",
+			"#727272": "dusk",
+			"#73c48f": "green",
+			"#77767b": "dusk",
+			"#785336": "rust",
+			"#7a59ca": "lilac",
+			"#7a7a7a": "dusk",
+			"#7ad9f1": "sky",
+			"#7b736e": "rust",
+			"#808080": "fg.muted",
+			"#813d9c": "dusk",
+			"#81c995": "green",
+			"#830e97": "ansi.black.bright",
+			"#83b6ec": "azure",
+			"#865e3c": "rust",
+			"#89cb8c": "green",
+			"#8adba6": "green",
+			"#8c8c8c": "fg.rose",
+			"#8de6b1": "green",
+			"#8fbaf3": "azure",
+			"#8ff0a4": "green",
+			"#9141ac": "lilac",
+			"#94a6ff": "ansi.blue",
+			"#986a44": "rust",
+			"#9945b5": "lilac",
+			"#99c1f1": "sky",
+			"#9a9996": "fg.muted",
+			"#9c27b0": "dusk",
+			"#9e91e8": "ansi.blue",
+			"#9f9792": "rust",
+			"#a27100": "rust",
+			"#a2f3be": "green",
+			"#a51d2d": "red",
+			"#ac1800": "red",
+			"#b08952": "rust",
+			"#b5835a": "rust",
+			"#b5e98a": "green",
+			"#b84acb": "lilac",
+			"#ba68c8": "lilac",
+			"#be916d": "rust",
+			"#c01c28": "red",
+			"#c061cb": "lilac",
+			"#c0bfbc": "taupe",
+			"#c26c00": "rust",
+			"#c29102": "gold",
+			"#c64600": "rust",
+			"#c7c7c7": "taupe",
+			"#caeaf2": "ansi.cyan",
+			"#cb78d4": "lilac",
+			"#cb8dd6": "lilac",
+			"#cccccc": "ansi.green",
+			"#cdab8f": "sand",
+			"#ce8cd7": "lilac",
+			"#ce93d8": "lilac",
+			"#cef8d8": "mint",
+			"#cf3b00": "rust",
+			"#cfe1f5": "ansi.blue",
+			"#d1a023": "gold",
+			"#d1d1d1": "ansi.green",
+			"#d2190b": "red",
+			"#d25de6": "lilac",
+			"#d29d09": "gold",
+			"#d5d2f5": "ansi.blue",
+			"#d68400": "rust",
+			"#d79b04": "gold",
+			"#d8354a": "red",
+			"#d8d7d3": "ansi.green",
+			"#d9d9d9": "ansi.green",
+			"#dc4040": "red",
+			"#dc8add": "lilac",
+			"#de8800": "rust",
+			"#deddda": "ansi.green",
+			"#dedede": "fg.bone",
+			"#dfdfdf": "fg.bright",
+			"#e01b24": "red",
+			"#e33b6a": "punch",
+			"#e3cf9c": "sand",
+			"#e5a50a": "gold",
+			"#e5d6ca": "peach",
+			"#e62d42": "red",
+			"#e66100": "rust",
+			"#e6e6e6": "fg.bone",
+			"#e6f9d7": "mint",
+			"#e7c2e8": "lilac",
+			"#e973ab": "punch",
+			"#eb5ec3": "punch",
+			"#ececec": "fg.bone",
+			"#eceff1": "fg.bone",
+			"#ed333b": "red",
+			"#ed5b00": "rust",
+			"#ededed": "fg.bone",
+			"#ef4e9b": "punch",
+			"#f06292": "punch",
+			"#f0ad05": "gold",
+			"#f15d22": "rust",
+			"#f22314": "red",
+			"#f2eade": "peach",
+			"#f2f2f2": "fg.bone",
+			"#f32c1e": "red",
+			"#f44336": "red",
+			"#f491b2": "punch",
+			"#f5564a": "red",
+			"#f55a4e": "red",
+			"#f57c00": "sand",
+			"#f5c211": "gold",
+			"#f65f54": "red",
+			"#f66151": "red",
+			"#f6695e": "red",
+			"#f66c62": "red",
+			"#f6d32d": "gold",
+			"#f6f5f4": "fg.bright",
+			"#f75a61": "red",
+			"#f77466": "red",
+			"#f77b72": "red",
+			"#f78773": "red",
+			"#f8d2ce": "fg",
+			"#f8e359": "sand",
+			"#f8e45c": "sand",
+			"#f9e2a7": "sand",
+			"#f9f06b": "sand",
+			"#f9f4e1": "sand",
+			"#faa41a": "sand",
+			"#fac7de": "petal",
+			"#fb8c00": "rust",
+			"#fbb814": "gold",
+			"#fbc02d": "sand",
+			"#fc2714": "red",
+			"#fccf5f": "sand",
+			"#fcf4bf": "sand",
+			"#fd5f51": "red",
+			"#fdbe04": "gold",
+			"#fdf8d7": "sand",
+			"#fefcef": "sand",
+			"#ff5252": "red",
+			"#ff7575": "red",
+			"#ff7800": "rust",
+			"#ff793e": "rust",
+			"#ff7a80": "red",
+			"#ff9262": "sand",
+			"#ffa348": "sand",
+			"#ffa95a": "sand",
+			"#ffbe6f": "sand",
+			"#ffca40": "gold",
+			"#ffcb62": "sand",
+			"#ffce51": "sand",
+			"#ffdb91": "peach",
+			"#ffe5c5": "peach",
+			"#ffead1": "peach",
+			"#fffa7d": "sand",
+			"#ffffa8": "sand",
+			"#ffffff": "fg.bright"
+		},
+		"pngColorMap": {
+			"#3380E6": "dusk"
+		},
+		"accentColor": "taupe"
 	},
 	"opencode": {
 		"defs": {
@@ -142,7 +693,21 @@
 			"syntaxPunctuation": "rose"
 		}
 	},
+	"mailspring": {
+		"accent": "petal",
+		"backgroundPrimary": "bg.base",
+		"backgroundSecondary": "bg.chrome",
+		"backgroundTertiary": "border",
+		"text": "fg.bright",
+		"textInverse": "bg.base",
+		"textMuted": "fg.muted",
+		"deep": "bg.deep"
+	},
 	"lint": {
-		"allowlist": ["#00000000", "#000000aa", "#000000c0"]
+		"allowlist": [
+			"#00000000",
+			"#000000aa",
+			"#000000c0"
+		]
 	}
 }

@@ -34,9 +34,9 @@ The palette in [`palette/palette.json`](palette/palette.json) is the source of t
 | `fg.bright` | `#FFEBEF` | Near-white pink: base text, variables |
 | `fg.bone` | `#E8EEEA` | Off-white: decorators, language constants, heading 2 |
 | `fg.muted` | `#9D8EA4` | Muted mauve: disabled text, secondary labels |
-| `fg.faint` | `#6c5c73` | Faint: inactive items, ignored files, resolved markers |
+| `fg.faint` | `#75647C` | Faint: inactive items, ignored files, resolved markers |
 | `fg.rose` | `#9F868A` | Rose grey: punctuation, brackets, selections, line numbers |
-| `border` | `#5B4D61` | Contrast borders, table borders |
+| `border` | `#6E5D75` | Contrast borders, table borders |
 | **Accents** | | |
 | `red` | `#f38ba8` | Errors, deleted, breakpoints, self/this, emphasis |
 | `mint` | `#DCE5E0` | Added/inserted, raw code, pale accents |
@@ -46,6 +46,7 @@ The palette in [`palette/palette.json`](palette/palette.json) is the source of t
 | `sand` | `#ebd391` | Warnings, ANSI yellow |
 | `peach` | `#ffce9c` | Parameters, git conflicts, charts orange |
 | `punch` | `#FF90BC` | Keywords, object properties |
+| `dusk` | `#7A6570` | Greyed dark magnolia: highlight and selection backgrounds |
 | `lilac` | `#BFAEED` | Function declarations |
 | `taupe` | `#D0B3B5` | Info, links, function calls, property names |
 | `cream` | `#F5EEE0` | Enum members, operators, list bullets |
@@ -98,8 +99,12 @@ Terminal mapping (ANSI 16, shared by the VS Code terminal, Konsole export):
 ## Other apps
 
 - **KDE Plasma**: copy [`exports/kde/Magnolia.colors`](exports/kde/Magnolia.colors) to `~/.local/share/color-schemes/`, then select "Magnolia" in *System Settings → Colors & Themes → Colors*
+- **Kvantum**: copy [`exports/kvantum/Magnolia`](exports/kvantum/Magnolia) to `~/.config/Kvantum/`, then select "Magnolia" in Kvantum Manager (base: OrchisDark, tinted by `palette.json`)
+- **Plasma theme**: copy [`exports/plasma/Magnolia`](exports/plasma/Magnolia) to `~/.local/share/plasma/desktoptheme/`, then select "Magnolia" in *System Settings → Colors & Themes → Global Theme → Plasma Style* (base: Orchis-dark, `colors` override removed so the KDE color scheme applies)
+- **GTK (2/3/4)**: copy [`exports/gtk/Magnolia`](exports/gtk/Magnolia) to `~/.themes/`, then select "Magnolia" in *System Settings → Application Style → GNOME Application Style* (base: Orchis-Dark, retinted by `palette.json`)
 - **Konsole**: copy [`exports/konsole/Magnolia.colorscheme`](exports/konsole/Magnolia.colorscheme) to `~/.local/share/konsole/`
 - **opencode**: copy [`exports/opencode/magnolia.json`](exports/opencode/magnolia.json) to `~/.config/opencode/themes/`, restart opencode, then select via `/theme`
+- **Mailspring**: copy [`exports/mailspring/ui-magnolia`](exports/mailspring/ui-magnolia) to `~/.config/Mailspring/packages/`, restart Mailspring, then select "Magnolia" in *Preferences → Appearance → Theme* (accent: petal, independent of the system selection color)
 
 ## License
 

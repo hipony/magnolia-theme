@@ -4,11 +4,11 @@
 		"magnolia": "#FFD1DA",
 		"text": "#FFEBEF",
 		"muted": "#9D8EA4",
-		"faint": "#6c5c73",
+		"faint": "#75647C",
 		"rose": "#9F868A",
 		"bgBase": "#11122C",
 		"bgChrome": "#17183B",
-		"border": "#5B4D61"
+		"border": "#6E5D75"
 	},
 	"theme": {
 		"primary": "#FFD1DA",
@@ -23,9 +23,9 @@
 		"background": "#11122C",
 		"backgroundPanel": "#17183B",
 		"backgroundElement": "#17183B",
-		"border": "#5B4D61",
+		"border": "#6E5D75",
 		"borderActive": "#FFD1DA",
-		"borderSubtle": "#6c5c73",
+		"borderSubtle": "#75647C",
 		"diffAdded": "#DCE5E0",
 		"diffRemoved": "#f38ba8",
 		"diffContext": "#9D8EA4",

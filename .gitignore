@@ -2,3 +2,7 @@ node_modules
 *.vsix
 vsc-extension-quickstart.md
 __pycache__
+
+exports/gtk
+exports/mailspring
+exports/plasma
