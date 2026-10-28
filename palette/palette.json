@@ -205,6 +205,15 @@
 		"foregroundIntense": "fg.bright",
 		"foregroundFaint": "fg.muted"
 	},
+	"ghostty": {
+		"background": "bg.base",
+		"backgroundBright": "bg.chrome",
+		"foreground": "fg",
+		"foregroundBright": "fg.bright",
+		"cursor": "rosewater",
+		"selectionBackground": "dusk",
+		"selectionForeground": "fg.bright"
+	},
 	"kde": {
 		"window": "bg.base",
 		"chrome": "bg.chrome",

@@ -73,7 +73,7 @@ The palette in [`palette/palette.json`](palette/palette.json) is the source of t
 | `ansi.petal.bright` | `#f9d8ef` | ANSI bright magenta |
 | `ansi.cyan.bright` | `#bfe9e0` | ANSI bright cyan |
 
-Terminal mapping (ANSI 16, shared by the VS Code terminal, Konsole export):
+Terminal mapping (ANSI 16, shared by the VS Code terminal, Konsole and Ghostty exports):
 
 | Slot | Color | Hex |
 | --- | --- | --- |
@@ -103,6 +103,7 @@ Terminal mapping (ANSI 16, shared by the VS Code terminal, Konsole export):
 - **Plasma theme**: copy [`exports/plasma/Magnolia`](exports/plasma/Magnolia) to `~/.local/share/plasma/desktoptheme/`, then select "Magnolia" in *System Settings → Colors & Themes → Global Theme → Plasma Style* (base: Orchis-dark, `colors` override removed so the KDE color scheme applies)
 - **GTK (2/3/4)**: copy [`exports/gtk/Magnolia`](exports/gtk/Magnolia) to `~/.themes/`, then select "Magnolia" in *System Settings → Application Style → GNOME Application Style* (base: Orchis-Dark, retinted by `palette.json`)
 - **Konsole**: copy [`exports/konsole/Magnolia.colorscheme`](exports/konsole/Magnolia.colorscheme) to `~/.local/share/konsole/`
+- **Ghostty**: add `config-file = <repo>/exports/ghostty/Magnolia.ghostty` to `~/.config/ghostty/config` (or `config.ghostty` on Ghostty 1.2+)
 - **opencode**: copy [`exports/opencode/magnolia.json`](exports/opencode/magnolia.json) to `~/.config/opencode/themes/`, restart opencode, then select via `/theme`
 - **Mailspring**: copy [`exports/mailspring/ui-magnolia`](exports/mailspring/ui-magnolia) to `~/.config/Mailspring/packages/`, restart Mailspring, then select "Magnolia" in *Preferences → Appearance → Theme* (accent: petal, independent of the system selection color)
 
